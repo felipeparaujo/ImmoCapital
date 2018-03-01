@@ -202,8 +202,8 @@ function getIndexedRegions(regions) {
 /**
  * Flag the investable regions and its subregions as such in the index of regions.
  * 
- * @param {Array.<string>} topLevelRegion - list of top-level investable regions
- * @param {Object} - name-indexed list of regions and its subregions
+ * @param {Array.<string>} investableRegions - list of top-level investable regions
+ * @param {Object} indexedRegions - name-indexed list of regions and its subregions
  * @return {Object} - name-indexed list of regions and its subregions flagged as
  *                            investable or not
  */
@@ -237,7 +237,7 @@ function flagInvestableRegions(investableRegions, indexedRegions) {
  * 
  * @param {string} topLevelRegion - the top-level region which will be used as starting
  *                                  point when looking for investable regions
- * @param {Object} - name-indexed list of regions and its subregions
+ * @param {Object} indexedRegions - name-indexed list of regions and its subregions
  * @return {Array.<string>} - the list of investable regions, which includes the top level
  *                            if it's an investable region
  */
@@ -277,7 +277,6 @@ getInvestableProperties('london', displayResultsCallback);
 
 if (module !== 'undefined' && module.exports !== 'undefined') {
   module.exports = {
-    getInvestablePropertiesAsync, 
     getIndexedRegions, 
     flagInvestableRegions, 
     getRelevantRegions
