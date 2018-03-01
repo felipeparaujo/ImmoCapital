@@ -1,0 +1,23 @@
+{
+  "name": "immocapital",
+  "version": "1.0.0",
+  "description": "ImmoCapital tech test",
+  "main": "src/immo.js",
+  "scripts": {
+    "start": "node src/immo",
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipeparaujo/ImmoCapital.git"
+  },
+  "author": "Felipe Araujo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipeparaujo/ImmoCapital/issues"
+  },
+  "homepage": "https://github.com/felipeparaujo/ImmoCapital#readme",
+  "devDependencies": {
+    "jest": "^22.4.2"
+  }
+}
